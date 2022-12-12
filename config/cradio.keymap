@@ -27,8 +27,13 @@
 
 // Bindings
 #define _____ &none
-#define NUBS NON_US_BSLH
+
+#ifndef NUBS
+  #define NUBS NON_US_BSLH
+#endif
+
 #define KP_STAR KP_ASTERISK
+
 #ifndef KP_NUM
   #define KP_NUM KP_NUMLOCK
 #endif
