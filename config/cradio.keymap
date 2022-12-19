@@ -317,7 +317,7 @@
             bindings = <
   &kp Y         &kp C     &kp L      &kp M           &kp K              &kp Z       &kp F           &kp U        &kp COMMA &kp SEMI
   &mtl LGUI I   &kp S     &kp R      &mtl LSHIFT T   &kp G              &kp P       &mtr RSHIFT N   &kp E        &kp A     &mtr LGUI O
-  &kp Q         &kp V     &kp W      &kp D           &kp J              &kp B       &kp H           &kp COMMA    &kp DOT   &kp FSLH
+  &kp Q         &kp V     &kp W      &kp D           &kp J              &kp B       &kp H           &kp FSLH     &kp DOT   &kp X
                                      &kp SPC         &td_ext            &none       &td_nav
             >;
         };
