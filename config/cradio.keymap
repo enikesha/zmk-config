@@ -356,7 +356,7 @@
   &none         &none        &none        &none        &reset           &reset      &none          &none        &none        &none
   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none       &to 0          &to 1        &to 2        &to BV_AL1
   &bt BT_CLR    &none        &none        &none        &bootloader      &bootloader &none          &none        &none        &none
-                                          &none        &none            &none        &none
+                                          &none        &none            &none       &none
             >;
         };
 
@@ -376,9 +376,9 @@
         bv_alpha2 {
             bindings = <
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                _____             &kp V              &kp W         &kp M         _____            _____        &kp F             &kp SEMI        &kp Z            _____
+                _____             &kp V              &kp W         &kp M         _____            _____        &kp F             &kp SEMI        &kp SQT          _____
                 &kp Q             &kp J              &kp P         &kp K         _____            _____        &kp B             &kp Z           &kp X            &kp Y
-                                                                   &key_repeat   _____            _____        _____
+                                                                   &to BV_AL1    &key_repeat      _____        _____
             >;
         };
 
@@ -387,7 +387,7 @@
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                 &kp GRAVE         &kp SQT            &kp LBKT      &kp RBKT      _____            _____        &kp BSLH          &kp COMMA       &kp DOT          &kp FSLH
-                                                                   &key_repeat   _____            _____        _____ 
+                                                                   &to BV_AL1    &key_repeat      _____        _____ 
             >;
         };
 
