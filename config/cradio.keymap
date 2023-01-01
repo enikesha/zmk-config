@@ -346,7 +346,7 @@
             bindings = <
   &kp F1        &kp F2    &kp F3     &kp F4          &none              &kp KP_NUM  &kp PRINTSCREEN   &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CAPS
   &kp F5        &kp F6    &kp F7     &kp F8          &to SYSTEM         &none       &kp LSHFT         &kp LCTRL       &kp LALT         &kp LGUI
-  &kp F9        &kp F10   &kp F11    &kp F12         &none              &none       &kp C_PLAY_PAUSE  &kp C_VOL_DN    &kp C_VOL_UP     &kp C_MUTE
+  &kp F9        &kp F10   &kp F11    &kp F12         &none              &to SYSTEM  &kp C_PLAY_PAUSE  &kp C_VOL_DN    &kp C_VOL_UP     &kp C_MUTE
                                      &none           &none              &none       &none
             >;
         };
