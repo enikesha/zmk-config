@@ -396,14 +396,14 @@
                 _____          _____             _____             _____         _____            _____        _____             _____           _____            _____
                 _____          &kp KP_STAR       &kp KP_PLUS       &kp N5        _____            _____        &kp N6            &kp MINUS       &kp EQUAL        _____
                 &mtl LSHFT N1  &kp N2            &kp N3            &kp N4        _____            _____        &kp N7            &kp N8          &kp N9           &mtr RSHFT N0
-                                                                   _____         _____            &mo BV_HOT   &kp SPC
+                                                                   &kp SPC       _____            &mo BV_HOT   &kp SPC
             >;
         };
 
         bv_navigation {
             bindings = <
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                _____             &kp LCTL           &kp LALT      &kp LGUI      _____            _____        &kp LG(LS(LBKT))  &kp UP          &kp LG(LS(LBKT)) _____
+                _____             &kp LCTL           &kp LALT      &kp LGUI      _____            _____        &kp PG_DN         &kp UP          &kp PG_UP        _____
                 &kp LSHFT         &kp TAB            &kp HOME      &kp END       _____            _____        &kp LEFT          &kp DOWN        &kp RIGHT        &bspc_del
                                                                    &mo BV_HOT    _____            _____        _____
             >;
