@@ -254,8 +254,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYERS_L";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <250>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
             global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -265,8 +265,8 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_LAYERS_R";
             #binding-cells = <2>;
-            tapping-term-ms = <220>;
-            quick-tap-ms = <250>;
+            tapping-term-ms = <400>;
+            quick-tap-ms = <200>;
             global-quick-tap;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
@@ -377,7 +377,7 @@
             bindings = <
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                 _____             &kp V              &kp W         &kp M         _____            _____        &kp F             &kp SEMI        &kp SQT          _____
-                &kp Q             &kp J              &kp P         &kp K         _____            _____        &kp B             &kp Z           &kp X            &kp Y
+                &kp Q             &kp J              &kp P         &mol BV_NAV K _____            _____        &kp B             &kp Z           &kp X            &kp Y
                                                                    &to BV_AL1    &key_repeat      _____        _____
             >;
         };
