@@ -60,40 +60,28 @@
 / {
     combos {
         compatible = "zmk,combos";
-        lock {
-            bindings = <&kp LG(L)>;
-            key-positions = < 9 19 29 >;
-            layers = < 0 1 2 BV_AL1 >;
-            timeout-ms = <50>;
-        };
-        mo_fun {
-            bindings = <&mo FUN>;
-            key-positions = <30 33>;
-            timeout-ms = <50>;
-            layers = < 0 1 2 >;
-        };
         left_escape {
             bindings = <&kp ESC>;
-            key-positions = <1 2>;
-            timeout-ms = <20>;
+            key-positions = <2 3>;
+            timeout-ms = <50>;
             layers = <0 1 2>;
         };
         left_enter {
             bindings = <&kp ENTER>;
-            key-positions = <11 12>;
-            timeout-ms = <20>;
+            key-positions = <14 15>;
+            timeout-ms = <50>;
             layers = <0 1 2>;
         };
         right_escape {
             bindings = <&kp ESC>;
-            key-positions = <7 8>;
-            timeout-ms = <20>;
+            key-positions = <8 9>;
+            timeout-ms = <50>;
             layers = <0 1 2>;
         };
         right_enter {
             bindings = <&kp ENTER>;
-            key-positions = <17 18>;
-            timeout-ms = <20>;
+            key-positions = <20 21>;
+            timeout-ms = <50>;
             layers = <0 1 2>;
         };
 
@@ -295,20 +283,20 @@
     keymap {
         compatible = "zmk,keymap";
 
+        qwerty {
+            bindings = <
+&kp TAB       &kp Q         &kp W     &kp E    &kp R      &kp T              &kp Y       &kp U           &kp I        &kp O    &kp P     &kp LBKT
+&kp LALT      &kp A         &kp S     &kp D    &kp F      &kp G              &kp H       &kp J           &kp K        &kp L    &kp SEMI  &kp SQT
+&kp LGUI      &kp Z         &kp X     &kp C    &kp V      &kp B              &kp N       &kp M           &kp COMMA    &kp DOT  &kp FSLH  &kp RBKT
+                                               &kp LCTRL  &td_ext  &kp SPC   &td_nav     &kp LSHIFT
+            >;
+        };
+
         colemak {
             bindings = <
  _____ &kp Q         &kp W     &kp F      &kp P           &kp B              &kp J       &kp L           &kp U        &kp Y    &kp SEMI _____
  _____ &kp A         &kp R     &kp S      &kp T           &kp G              &kp M       &kp N           &kp E        &kp I    &kp O    _____
  _____ &kp Z         &kp X     &kp C      &kp D           &kp V              &kp K       &kp H           &kp COMMA    &kp DOT  &kp FSLH _____
-                                          &none           &kp SPC  &td_ext   &td_nav     &none
-            >;
-        };
-
-        qwerty {
-            bindings = <
- _____ &kp Q         &kp W     &kp E      &kp R           &kp T              &kp Y       &kp U           &kp I        &kp O    &kp P     _____
- _____ &kp A         &kp S     &kp D      &kp F           &kp G              &kp H       &kp J           &kp K        &kp L    &kp SEMI  _____
- _____ &kp Z         &kp X     &kp C      &kp V           &kp B              &kp N       &kp M           &kp COMMA    &kp DOT  &kp FSLH  _____
                                           &none           &kp SPC  &td_ext   &td_nav     &none
             >;
         };
@@ -324,28 +312,28 @@
         
         extended {
             bindings = <
- _____ &sk LGUI      &sk LALT  &sk LCTRL  &sk LSHFT       &none              &kp NUBS    &kp MINUS       &kp EQUAL    &kp LBKT  &kp RBKT      _____
- _____ &mtl LGUI N1  &kp N2    &kp N3     &mtl LSHIFT N4  &kp N5             &kp N6      &mtr LSHIFT N7  &kp N8       &kp N9    &mtr LGUI N0  _____
- _____ &sk RGUI      &sk RALT  &sk RCTRL  &sk RSHFT       &kp LG(SPACE)      &kp GRAVE   &kp SQT         &kp COMMA    &kp DOT   &kp BSLH      _____
-                                          &none           &kp SPC  &td_ext   &kp F19     &kp SPC
+ &kp ESC   &sk LGUI      &sk LALT  &sk LCTRL  &sk LSHFT       &none              &kp NUBS    &kp MINUS       &kp EQUAL    &kp LBKT  &kp RBKT      &kp EQUAL 
+ &kp LALT  &mtl LGUI N1  &kp N2    &kp N3     &mtl LSHIFT N4  &kp N5             &kp N6      &mtr LSHIFT N7  &kp N8       &kp N9    &mtr LGUI N0  &kp MINUS
+ &kp LGUI  &sk RGUI      &sk RALT  &sk RCTRL  &sk RSHFT       &kp LG(SPACE)      &kp GRAVE   &kp SQT         &kp COMMA    &kp DOT   &kp BSLH      &kp GRAVE
+                                              &kp LCTRL       &td_ext  &kp SPC   &td_nav     &kp LSHIFT
             >;
         };
 
         navigation {
             bindings = <
-    _____ &kp C_EJECT   &none     &none      &none           &none              &kp HOME    &kp PG_DN       &kp PG_UP    &kp END          &kp DEL         _____
-    _____ &kp LGUI      &kp LALT  &kp LCTRL  &kp LSHIFT      &kp K_APP          &kp LEFT    &kp DOWN        &kp UP       &kp RIGHT        &kp BSPC        _____
-    _____ &none         &none     &none      &none           &none              &kp INS     &kp TAB         &kp LA(ESC)  &kp LA(LS(ESC))  &kp LA(LC(TAB)) _____
-                                             &none  &kp SPACE       &mo FUN            &none       &none
+&kp ESC   &kp C_EJECT   &none     &none      &none           &none            &kp PG_UP  &kp HOME        &kp UP       &kp END          &kp DEL         _____
+&kp LALT  &kp LGUI      &kp LALT  &kp LCTRL  &kp LSHIFT      &kp K_APP        &kp PG_DN  &kp LEFT        &kp DOWN     &kp RIGHT        &kp BSPC        &kp ENTER
+&kp LGUI  &none         &none     &none      &none           &none            &kp INS    &kp TAB         &kp LA(ESC)  &kp LA(LS(ESC))  &kp LA(LC(TAB)) _____
+                                             &kp LCTRL       &td_ext  &kp SPC &td_nav    &kp LSHIFT
             >;
         };
 
         function {
             bindings = <
-    _____ &kp F1        &kp F2    &kp F3     &kp F4          &none              &kp KP_NUM  &kp PRINTSCREEN   &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CAPS    _____
-    _____ &kp F5        &kp F6    &kp F7     &kp F8          &to SYSTEM         &none       &kp LSHFT         &kp LCTRL       &kp LALT         &kp LGUI    _____
-    _____ &kp F9        &kp F10   &kp F11    &kp F12         &none              &none       &kp C_PLAY_PAUSE  &kp C_VOL_DN    &kp C_VOL_UP     &kp C_MUTE  _____
-                                             &none           &none   &none      &none       &none
+ &kp ESC  &kp F1        &kp F2    &kp F3     &kp F4     &none              &kp KP_NUM  &kp PRINTSCREEN   &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CAPS    _____
+ &kp LALT &kp F5        &kp F6    &kp F7     &kp F8     &none              &none       &kp LSHFT         &kp LCTRL       &kp LALT         &kp LGUI    _____
+ &kp LGUI &kp F9        &kp F10   &kp F11    &kp F12    &none              &none       &kp C_PLAY_PAUSE  &kp C_VOL_DN    &kp C_VOL_UP     &kp C_MUTE  _____
+                                             &kp LCTRL  &td_ext  &kp SPC   &td_nav     &kp LSHIFT
             >;
         };
 
