@@ -223,7 +223,7 @@
             tapping-term-ms = <300>;
             bindings =
                 <&sl_al2>,
-                <&mo BV_AL2>;
+                <&mo BV_NAV>;
         };
         td_al3: tap_al3 {
             compatible = "zmk,behavior-tap-dance";
@@ -421,7 +421,7 @@
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                 _____             &kp LCTL           &kp LALT      &kp LGUI      _____            _____        &kp PG_DN         &kp UP          &kp PG_UP        _____
                 &kp LSHFT         &kp TAB            &kp HOME      &kp END       _____            _____        &kp LEFT          &kp DOWN        &kp RIGHT        &bspc_del
-                                                                   &mo BV_HOT    _____            _____        _____
+                                                                   &kp LA(LS(ESC)) &kp LA(ESC)    _____        _____
             >;
         };
 
