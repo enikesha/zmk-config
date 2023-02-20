@@ -30,6 +30,7 @@
 
 // Bindings
 #define _____ &none
+#define SHFTSPC &rt LSHFT SPC 
 #define HYPER LA(LG(LCTRL)) 0
 // tapping-term-ms = <300>;
 #define TAPPING_TERM 300 
