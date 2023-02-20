@@ -347,7 +347,7 @@
 _____  &kp Q         &kp W     &kp F      &kp P           &kp B              &kp J       &kp L           &kp U        &kp Y    &kp SEMI     _____
 _____  &kp A         &kp R     &kp S      &kp T           &kp G              &kp M       &kp N           &kp E        &kp I    &kp O        _____
 _____  &kp Z         &kp X     &kp C      &kp D           &kp V              &kp K       &kp H           &kp COMMA    &kp DOT  &kp FSLH     _____
-                                          _____           &kp SPC  &td_ext   &td_nav     _____
+                                          _____           &rt LSHFT SPC   &td_ext   &td_nav     _____
             >;
         };
 
@@ -356,33 +356,33 @@ _____  &kp Z         &kp X     &kp C      &kp D           &kp V              &kp
 _____  &kp Q         &kp W     &kp E      &kp R           &kp T              &kp Y       &kp U           &kp I        &kp O    &kp P        _____
 _____  &kp A         &kp S     &kp D      &kp F           &kp G              &kp H       &kp J           &kp K        &kp L    &kp SEMI     _____
 _____  &kp Z         &kp X     &kp C      &kp V           &kp B              &kp N       &kp M           &kp COMMA    &kp DOT  &kp FSLH     _____
-                                          _____           &kp SPC  &td_ext   &td_nav     _____
+                                          _____           &rt LSHFT SPC   &td_ext   &td_nav     _____
             >;
         };
 
         isrtgp {
             bindings = <
-_____  &kp Y         &kp C     &kp L      &kp M           &kp K              &kp Z       &kp F           &kp U        &kp COMMA &kp SEMI        _____
+_____  &kp Y         &kp C     &kp L      &kp M           &kp K              &kp Z       &kp F           &kp U        &kp COMMA &kp SEMI    _____
 _____  &kp I         &kp S     &kp R      &kp T           &kp G              &kp P       &kp N           &kp E        &kp A     &kp O       _____
 _____  &kp Q         &kp V     &kp W      &kp D           &kp J              &kp B       &kp H           &kp FSLH     &kp DOT   &kp X       _____
-                                          _____           &kp SPC  &td_ext   &td_nav     _____
+                                          _____           &rt LSHFT SPC    &td_ext   &td_nav     _____
             >;
         };
         
         extended {
             bindings = <
-_____  &sk LGUI      &sk LALT  &sk LCTRL  &sk LSHFT       &sk F19            &kp NUBS    &kp MINUS       &kp EQUAL    &kp LBKT  &kp RBKT        _____
-_____  &mtl LGUI N1  &kp N2    &kp N3     &mtl LSHIFT N4  &kp N5             &kp N6      &mtr LSHIFT N7  &kp N8       &kp N9    &mtr LGUI N0        _____
-_____  &sk RGUI      &sk RALT  &sk RCTRL  &sk RSHFT       &kp LG(SPACE)      &kp GRAVE   &kp SQT         &kp COMMA    &kp DOT   &kp BSLH        _____
-                                          _____           _____     _____    &kp SPACE   _____
+_____  &sk LSHFT     &sk LCTRL &sk LALT   &sk LGUI        &sk F19            &kp NUBS    &kp MINUS       &kp EQUAL    &kp LBKT  &kp RBKT      _____
+_____  &kp N1        &kp N2    &kp N3     &kp N4          &kp N5             &kp N6      &kp N7          &kp N8       &kp N9    &kp N0        _____
+_____  &sk RSHFT     &sk RCTRL &sk RALT   &sk RGUI        &kp LG(SPACE)      &kp GRAVE   &kp SQT         &kp COMMA    &kp DOT   &kp BSLH      _____
+                                          _____           &rt LSHFT SPC    _____    &rt LSHFT SPC   _____
             >;
         };
 
         navigation {
             bindings = <
-_____  &kp C_EJECT   &none     &none      &none           &none              &kp HOME    &kp PG_DN       &kp PG_UP    &kp END          &kp DEL      _____
-_____  &kp LGUI      &kp LALT  &kp LCTRL  &kp LSHIFT      &kp K_APP          &kp LEFT    &kp DOWN        &kp UP       &kp RIGHT        &kp BSPC     _____
-_____  &none         &none     &none      &none           &none              &kp INS     &kp TAB         &kp LA(ESC)  &kp LA(LS(ESC))  &kp LA(LC(TAB))      _____
+_____  &kp C_EJECT   &none     &none      &none           &none              &kp HOME    &kp PG_DN       &kp PG_UP    &kp END          &kp DEL         _____
+_____  &kp LSHFT     &kp LCTRL &kp LALT   &kp LGUI        &kp K_APP          &kp LEFT    &kp DOWN        &kp UP       &kp RIGHT        &kp BSPC        _____
+_____  &none         &none     &none      &none           &none              &kp INS     &kp TAB         &kp LA(ESC)  &kp LA(LS(ESC))  &kp LA(LC(TAB)) _____
                                 _____     &kp SPACE       _____              &mo FUN      _____
             >;
         };
@@ -390,7 +390,7 @@ _____  &none         &none     &none      &none           &none              &kp
         function {
             bindings = <
 _____  &kp F1        &kp F2    &kp F3     &kp F4          &none              &kp KP_NUM  &kp PRINTSCREEN   &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CAPS        _____
-_____  &kp F5        &kp F6    &kp F7     &kp F8          &to SYSTEM         &none       &kp LSHFT         &kp LCTRL       &kp LALT         &kp LGUI        _____
+_____  &kp F5        &kp F6    &kp F7     &kp F8          &to SYSTEM         &none       &kp LGUI          &kp LALT        &kp LCTRL        &kp LSHFT       _____
 _____  &kp F9        &kp F10   &kp F11    &kp F12         &none              &to SYSTEM  &kp C_PLAY_PAUSE  &kp C_VOL_DN    &kp C_VOL_UP     &kp C_MUTE      _____
                                 _____     _____           _____              _____       _____
             >;
@@ -398,9 +398,9 @@ _____  &kp F9        &kp F10   &kp F11    &kp F12         &none              &to
 
         system {
             bindings = <
-_____  &none         &none        &none        &none        &reset           &reset      &none          &none        &none        &none     _____
-_____  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none       &to 0          &to 1        &to 2        &to BV_AL1        _____
-_____  &bt BT_CLR    &none        &none        &none        &bootloader      &bootloader &none          &none        &none        &none     _____
+_____  &none         &none        &none        &none        &reset           &reset      &none          &none        &none        &none      _____
+_____  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none       &to 0          &to 1        &to 2        &to BV_AL1 _____
+_____  &bt BT_CLR    &none        &none        &none        &bootloader      &bootloader &none          &none        &none        &none      _____
                                 _____          _____        _____            _____       _____
             >;
         };
@@ -412,8 +412,8 @@ _____  &bt BT_CLR    &none        &none        &none        &bootloader      &bo
         bv_alpha1 {
             bindings = <
             _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    &kp ESC           &mtl LCTL L        &mtl LALT G   &mtl LGUI D   &kp LA(ESC)      &kp TAB      &mtr LGUI H       &mtr LALT U     &mtr LCTL O      &kp ENTER        _____
-            _____    &mtl LSHFT I      &mol BV_NUM S      &mol BV_FUN R &mol BV_NAV T &key_repeat      &bspc_del    &mor BV_NAV N     &mor BV_FUN E   &mor BV_NUM A    &mtr RSHFT C     _____
+            _____    &kp ESC           &mtl LCTL L        &mtl LALT G   &mtl LGUI D   &kp LA(ESC)      &kp TAB      &mtr LGUI H       &mtr LALT U     &mtr LCTL O      &kp ENTER    _____
+            _____    &mtl LSHFT I      &mol BV_NUM S      &mol BV_FUN R &mol BV_NAV T &key_repeat      &bspc_del    &mor BV_NAV N     &mor BV_FUN E   &mor BV_NUM A    &mtr RSHFT C _____
                                                           &hrep HYPER   &rt LSHFT SPC &sl_al3          &sl_al2      &sl_al3 
             >;
         };
@@ -437,8 +437,8 @@ _____  &bt BT_CLR    &none        &none        &none        &bootloader      &bo
         bv_alpha1rus {
             bindings = <
             _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    &kp ESC           &mtl LCTL K        &mtl LALT U   &mtl LGUI L   &kp LA(ESC)      &kp TAB      &mtr LGUI LBKT    &mtr LALT E     &mtr LCTL J      &kp ENTER        _____
-            _____    &mtl LSHFT B      &mol BV_NUM C      &mol BV_FUN H &mol BV_NAV N &key_repeat      &bspc_del    &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT W     _____
+            _____    &kp ESC           &mtl LCTL K        &mtl LALT U   &mtl LGUI L   &kp LA(ESC)      &kp TAB      &mtr LGUI LBKT    &mtr LALT E     &mtr LCTL J      &kp ENTER    _____
+            _____    &mtl LSHFT B      &mol BV_NUM C      &mol BV_FUN H &mol BV_NAV N &key_repeat      &bspc_del    &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT W _____
                                                           &hrep HYPER   &mt LSHFT SPC       &sl_ar3      &sl_ar2     &sl_ar3 
             >;
         };
@@ -472,16 +472,16 @@ _____  &bt BT_CLR    &none        &none        &none        &bootloader      &bo
             bindings = <
             _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
             _____    _____             &kp LCTL           &kp LALT      &kp LGUI      _____            _____        &kp PG_DN         &kp UP          &kp PG_UP        _____        _____
-            _____    &kp LSHFT         &kp TAB            &kp HOME      &kp END       _____            _____        &kp LEFT          &kp DOWN        &kp RIGHT        &bspc_del        _____
+            _____    &kp LSHFT         &kp TAB            &kp HOME      &kp END       _____            _____        &kp LEFT          &kp DOWN        &kp RIGHT        &bspc_del    _____
                                                             _____       &mt LSHFT SPC _____            &mt LSHFT SPC     _____
             >;
         };
 
         bv_function {
             bindings = <
-            _____    &bootloader       _____              _____         _____         _____            _____        _____             _____           _____            &bootloader      _____
-            _____    _____             &kp LCTL           &kp LALT      &mtl LGUI F5  _____            _____        &mtr LGUI F6      &mtr LALT F11   &mtr LCTL F12    _____        _____
-            _____    &mtl LSHFT F1     &kp F2             &kp F3        &kp F4        _____            _____        &kp F7            &kp F8          &kp F9           &mtr RSHFT F10       _____
+            _____    &bootloader       _____              _____         _____         _____            _____        _____             _____           _____            &bootloader    _____
+            _____    _____             &kp LCTL           &kp LALT      &mtl LGUI F5  _____            _____        &mtr LGUI F6      &mtr LALT F11   &mtr LCTL F12    _____          _____
+            _____    &mtl LSHFT F1     &kp F2             &kp F3        &kp F4        _____            _____        &kp F7            &kp F8          &kp F9           &mtr RSHFT F10 _____
                                                             _____       &kp LSHFT     &kp PRINTSCREEN  &mo BV_MED   &kp C_EJECT  
             >;
         };
@@ -489,7 +489,7 @@ _____  &bt BT_CLR    &none        &none        &none        &bootloader      &bo
             bindings = <
             _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
             _____    _____             _____              _____         &kp F5        _____            _____        &kp F6            &kp C_VOL_DN    &kp C_VOL_UP     _____        _____
-            _____    &kp C_BRI_DN      &kp C_BRI_UP       &kp F3        &kp F4        _____            _____        &kp C_PREV        &kp C_PP        &kp C_NEXT       &kp C_MUTE       _____
+            _____    &kp C_BRI_DN      &kp C_BRI_UP       &kp F3        &kp F4        _____            _____        &kp C_PREV        &kp C_PP        &kp C_NEXT       &kp C_MUTE   _____
                                                             _____       _____         &bootloader      _____        _____
                                                                      
             >;
