@@ -348,7 +348,7 @@
 _____  &kp Q         &kp W     &kp F      &kp P           &kp B              &kp J       &kp L           &kp U        &kp Y    &kp SEMI     _____
 _____  &kp A         &kp R     &kp S      &kp T           &kp G              &kp M       &kp N           &kp E        &kp I    &kp O        _____
 _____  &kp Z         &kp X     &kp C      &kp D           &kp V              &kp K       &kp H           &kp COMMA    &kp DOT  &kp FSLH     _____
-                                          _____           &rt LSHFT SPC   &td_ext   &td_nav     _____
+                                          &td_ext           &rt LSHFT SPC   &td_ext   &td_nav     _____
             >;
         };
 
@@ -357,7 +357,7 @@ _____  &kp Z         &kp X     &kp C      &kp D           &kp V              &kp
 _____  &kp Q         &kp W     &kp E      &kp R           &kp T              &kp Y       &kp U           &kp I        &kp O    &kp P        _____
 _____  &kp A         &kp S     &kp D      &kp F           &kp G              &kp H       &kp J           &kp K        &kp L    &kp SEMI     _____
 _____  &kp Z         &kp X     &kp C      &kp V           &kp B              &kp N       &kp M           &kp COMMA    &kp DOT  &kp FSLH     _____
-                                          _____           &rt LSHFT SPC   &td_ext   &td_nav     _____
+                                          &td_ext           &rt LSHFT SPC   &td_ext   &td_nav     _____
             >;
         };
 
@@ -366,7 +366,7 @@ _____  &kp Z         &kp X     &kp C      &kp V           &kp B              &kp
 _____  &kp Y         &kp C     &kp L      &kp M           &kp K              &kp Z       &kp F           &kp U        &kp COMMA &kp SEMI    _____
 _____  &kp I         &kp S     &kp R      &kp T           &kp G              &kp P       &kp N           &kp E        &kp A     &kp O       _____
 _____  &kp Q         &kp V     &kp W      &kp D           &kp J              &kp B       &kp H           &kp FSLH     &kp DOT   &kp X       _____
-                                          _____           &rt LSHFT SPC    &td_ext   &td_nav     _____
+                                          &td_ext           &rt LSHFT SPC    &td_ext   &td_nav     _____
             >;
         };
         
