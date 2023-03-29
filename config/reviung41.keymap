@@ -412,87 +412,86 @@ _____  &bt BT_CLR    &none        &none        &none        &bootloader      &bo
 
         bv_alpha1 {
             bindings = <
-            _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    &kp ESC           &mtl LCTL L        &mtl LALT G   &mtl LGUI D   &kp LA(ESC)      &kp TAB      &mtr LGUI H       &mtr LALT U     &mtr LCTL O      &kp ENTER    _____
-            _____    &mtl LSHFT I      &mol BV_NUM S      &mol BV_FUN R &mol BV_NAV T &key_repeat      &bspc_del    &mor BV_NAV N     &mor BV_FUN E   &mor BV_NUM A    &mtr RSHFT C _____
-                                                          &hrep HYPER   &rt LSHFT SPC &sl_al3          &sl_al2      &sl_al3 
+        _____        &kp LA(ESC)       &mtl LCTL L        &mtl LALT G   &mtl LGUI D  &kp LS(LA(ESC))   &kp TAB      &mtr LGUI H       &mtr LALT U     &mtr LCTL O      _____       _____
+        _____        &mtl LSHFT I      &mol BV_NUM S      &mol BV_FUN R &mol BV_NAV T &key_repeat      &bspc_del    &mor BV_NAV N     &mor BV_FUN E   &mor BV_NUM A    &mtr RSHFT C        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
+                                                            _____       &rt LSHFT SPC  &sl_al3      &sl_al2 _____
             >;
         };
         bv_alpha2 {
             bindings = <
-            _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    _____             &kp V              &kp W         &kp M         _____            _____        &kp F             &kp SEMI        &kp NON_US_BSLH  _____        _____
-            _____    &kp Q             &kp J              &kp P         &kp K         &key_repeat      &bspc_del    &kp B             &kp Z           &kp X            &kp Y        _____
-                                                            _____       &mt LSHFT SPC _____            &to BV_AL1   _____
+        _____        _____             &kp V              &kp W         &kp M         _____            _____        &kp F             &kp SEMI        &kp NON_US_BSLH  _____        _____
+        _____        &kp Q             &kp J              &kp P         &kp K         &key_repeat      &bspc_del    &kp B             &kp Z           &kp X            &kp Y        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
+                                                                _____   &mt LSHFT SPC  &to BV_AL1   _____   _____
             >;
         };
         bv_alpha3 {
             bindings = <
-            _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    _____             &kp LS(SQT)        &kp LS(LBKT)  &kp LS(RBKT)  _____            _____        &kp LS(BSLH)      &kp LS(COMMA)   &kp LS(DOT)      _____        _____
-            _____    &kp GRAVE         &kp SQT            &kp LBKT      &kp RBKT      &key_repeat      &bspc_del    &kp BSLH          &kp COMMA       &kp DOT          &kp FSLH     _____
-                                                            _____       &mt LSHFT SPC _____            _____        &to BV_AL1
+        _____        _____             &kp LS(SQT)        &kp LS(LBKT)  &kp LS(RBKT)  _____            _____        &kp LS(BSLH)      &kp LS(COMMA)   &kp LS(DOT)      _____        _____
+        _____        &kp GRAVE         &kp SQT            &kp LBKT      &kp RBKT      &key_repeat      &bspc_del    &kp BSLH          &kp COMMA       &kp DOT          &kp FSLH        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
+                                                                 _____  &mt LSHFT SPC  _____        &to BV_AL1 _____
             >;
         };
 
         bv_alpha1rus {
             bindings = <
-            _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    &kp ESC           &mtl LCTL K        &mtl LALT U   &mtl LGUI L   &kp LA(ESC)      &kp TAB      &mtr LGUI LBKT    &mtr LALT E     &mtr LCTL J      &kp ENTER    _____
-            _____    &mtl LSHFT B      &mol BV_NUM C      &mol BV_FUN H &mol BV_NAV N &key_repeat      &bspc_del    &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT W _____
-                                                          &hrep HYPER   &mt LSHFT SPC       &sl_ar3      &sl_ar2     &sl_ar3 
+        _____        &kp LA(ESC)       &mtl LCTL K        &mtl LALT U   &mtl LGUI L   &kp LS(LA(ESC))  &kp TAB      &mtr LGUI LBKT    &mtr LALT E     &mtr LCTL J      _____        _____
+        _____        &mtl LSHFT B      &mol BV_NUM C      &mol BV_FUN H &mol BV_NAV N &key_repeat      &bspc_del    &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT W        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
+                                                                _____   &mt LSHFT SPC  &sl_ar3      &sl_ar2 _____
             >;
         };
         bv_alpha2rus {
             bindings = <
-            _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    _____             &kp SEMI           &kp D         &kp V         _____            _____        &kp A             &kp X           &kp SQT          _____        _____
-            _____    &kp DOT           &kp Q              &kp G         &mol BV_NAV R &key_repeat      &bspc_del    &kp COMMA         &kp P           &kp M            &kp S        _____
-                                                             _____      &mt LSHFT SPC _____            &to BV_AR1   _____
+        _____        _____             &kp SEMI           &kp D         &kp V         _____            _____        &kp A             &kp X           &kp RBKT         _____        _____
+        _____        &kp DOT           &kp Q              &kp G         &mol BV_NAV R &key_repeat      &bspc_del    &kp COMMA         &kp P           &kp M            &kp S        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
+                                                                _____   &mt LSHFT SPC  &to BV_AR1   _____  _____
             >;
         };
         bv_alpha3rus {
             bindings = <
-            _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    _____             _____              _____         _____         _____            _____        &kp NON_US_BSLH   _____           _____            _____        _____
-            _____    &kp GRAVE         &kp SQT            &kp I         &kp O         &key_repeat      &bspc_del    &kp BSLH          &kp LS(FSLH)    &kp FSLH         &kp Z        _____
-                                                            _____       &mt LSHFT SPC _____            _____        &to BV_AR1
+        _____        _____             _____              _____         _____         _____            _____        &kp NON_US_BSLH   _____           _____            _____        _____
+        _____        &kp GRAVE         &kp SQT            &kp I         &kp O         &key_repeat      &bspc_del    &kp BSLH          &kp LS(FSLH)    &kp FSLH         &kp Z        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
+                                                                _____   &mt LSHFT SPC _____        &to BV_AR1  _____
             >;
         };
 
         bv_numbers {
             bindings = <
-            _____    _____          _____             _____             _____         _____            _____        _____             _____           _____            _____        _____
-            _____    _____          &kp KP_DIVIDE     &kp KP_PLUS       &kp N5        _____            _____        &kp N6            &kp MINUS       &kp EQUAL        _____        _____
-            _____    &kp N1         &kp N2            &kp N3            &kp N4        &kp N5           &kp N6       &kp N7            &kp N8          &kp N9           &kp N0       _____
-                                                            _____       &mt LSHFT SPC &kp RALT         &kp COMMA    &kp DOT 
+        _____        _____          &kp KP_DIVIDE     &kp KP_PLUS       &kp N5        _____            _____        &kp N6            &kp MINUS       &kp EQUAL        _____        _____
+        _____        &kp N1         &kp N2            &kp N3            &kp N4        &kp N5           &kp N6       &kp N7            &kp N8          &kp N9           &kp N0        _____
+        _____        _____          _____             _____             _____         _____            _____        _____             _____           _____            _____        _____
+                                                                _____  &mt LSHFT SPC &kp RALT         &kp COMMA    &kp DOT
             >;
         };
 
         bv_navigation {
             bindings = <
-            _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    _____             &kp LCTL           &kp LALT      &kp LGUI      _____            _____        &kp PG_DN         &kp UP          &kp PG_UP        _____        _____
-            _____    &kp LSHFT         &kp TAB            &kp HOME      &kp END       _____            _____        &kp LEFT          &kp DOWN        &kp RIGHT        &bspc_del    _____
-                                                            _____       &mt LSHFT SPC _____            &mt LSHFT SPC     _____
+        _____        _____             &kp LCTL           &kp LALT      &kp LGUI      _____            _____        &kp PG_DN         &kp UP          &kp PG_UP        _____        _____
+        _____        &kp LSHFT         &kp TAB            &kp HOME      &kp END       _____            _____        &kp LEFT          &kp DOWN        &kp RIGHT        &bspc_del        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
+                                                                _____   &mt LSHFT SPC   _____        &mt LSHFT SPC _____
             >;
         };
 
         bv_function {
             bindings = <
-            _____    &bootloader       _____              _____         _____         _____            _____        _____             _____           _____            &bootloader    _____
-            _____    _____             &kp LCTL           &kp LALT      &mtl LGUI F5  _____            _____        &mtr LGUI F6      &mtr LALT F11   &mtr LCTL F12    _____          _____
-            _____    &mtl LSHFT F1     &kp F2             &kp F3        &kp F4        _____            _____        &kp F7            &kp F8          &kp F9           &mtr RSHFT F10 _____
-                                                            _____       &kp LSHFT     &kp PRINTSCREEN  &mo BV_MED   &kp C_EJECT  
+        _____        _____             &kp LCTL           &kp LALT      &mtl LGUI F5  _____            _____        &mtr LGUI F6      &mtr LALT F11   &mtr LCTL F12    _____        _____
+        _____        &mtl LSHFT F1     &kp F2             &kp F3        &kp F4        _____            _____        &kp F7            &kp F8          &kp F9           &mtr RSHFT F10        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____       _____
+                                                                _____   &kp LSHFT     &kp PRINTSCREEN  &mo BV_MED   &kp C_EJECT 
             >;
         };
         bv_media {
             bindings = <
-            _____    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
-            _____    _____             _____              _____         &kp F5        _____            _____        &kp F6            &kp C_VOL_DN    &kp C_VOL_UP     _____        _____
-            _____    &kp C_BRI_DN      &kp C_BRI_UP       &kp F3        &kp F4        _____            _____        &kp C_PREV        &kp C_PP        &kp C_NEXT       &kp C_MUTE   _____
-                                                            _____       _____         &bootloader      _____        _____
-                                                                     
+        _____        _____             _____              _____         &kp F5        _____            _____        &kp F6            &kp C_VOL_DN    &kp C_VOL_UP     _____        _____
+        _____        &kp C_BRI_DN      &kp C_BRI_UP       &kp F3        &kp F4        _____            _____        &kp C_PREV        &kp C_PP        &kp C_NEXT       &kp C_MUTE        _____
+        _____        _____             _____              _____         _____         _____            _____        _____             _____           _____            _____        _____
+                                                                   _____         _____  _____  _____      &bootloader                                                                      
             >;
         };
     };
