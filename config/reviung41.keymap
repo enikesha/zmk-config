@@ -105,87 +105,75 @@
 
         bv_to_eng { 
             bindings = <&to_eng>;
-            key-positions = < 26 27 28 >;
+            key-positions = < 14 15 16 >;
             timeout-ms = < COMBO_TIMEOUT >;
         };
         bv_to_rus {
             bindings = <&to_rus>;
-            key-positions = < 31 32 33 >;
-            timeout-ms = < COMBO_TIMEOUT >;
-            layers = < BV_AL1 BV_AR1 >;
-        };
-        bv_to_num {  // &to NUM layer
-            bindings = <&to BV_NUM>;
-            key-positions = < 14 15 16 >;
-            timeout-ms = < COMBO_TIMEOUT >;
-            layers = < BV_AL1 BV_AR1 >;
-        };
-        bv_to_nav {  // to NAV layer
-            bindings = <&to BV_NAV>;
             key-positions = < 19 20 21 >;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
-        };        
+        };    
 
         bv_escape {
             bindings = <&kp ESC>;
-            key-positions = <20 21>;
+            key-positions = <8 9>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
         bv_escape_left {
             bindings = <&kp ESC>;
-            key-positions = <14 15>;
+            key-positions = <2 3>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
         bv_enter {
             bindings = <&kp ENTER>;
-            key-positions = <32 33>;
+            key-positions = <20 21>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
         bv_backspace {
             bindings = <&kp BACKSPACE>;
-            key-positions = <31 32>;
+            key-positions = <19 20>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
         bv_tab {
             bindings = <&kp TAB>;
-            key-positions = <19 20>;
+            key-positions = <7 8>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
 
         bv_bt0 {
             bindings = <&bt BT_SEL 0>;
-            key-positions = <14 26>;
+            key-positions = <0 14 26>;
             timeout-ms = < COMBO_TIMEOUT >;
         };
         bv_bt1 {
             bindings = <&bt BT_SEL 1>;
-            key-positions = <15 27>;
+            key-positions = <0 5 27>;
             timeout-ms = < COMBO_TIMEOUT >;
         };
         bv_bt2 {
             bindings = <&bt BT_SEL 2>;
-            key-positions = <16 28>;
+            key-positions = <0 16 28>;
             timeout-ms = < COMBO_TIMEOUT >;
         };
         bv_bt3 {
             bindings = <&bt BT_SEL 3>;
-            key-positions = <19 31>;
+            key-positions = <0 19 31>;
             timeout-ms = < COMBO_TIMEOUT >;
         };
         bv_bt4 {
             bindings = <&bt BT_SEL 4>;
-            key-positions = <20 32>;
+            key-positions = <0 20 32>;
             timeout-ms = < COMBO_TIMEOUT >;
         };
         bv_bt_clr {
             bindings = <&bt BT_CLR>;
-            key-positions = <21 33>;
+            key-positions = <0 21 33>;
             timeout-ms = < COMBO_TIMEOUT >;
         };        
     };
