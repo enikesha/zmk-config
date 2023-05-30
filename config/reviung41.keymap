@@ -387,7 +387,7 @@ _____  &kp F9        &kp F10   &kp F11    &kp F12         &none              &to
 
         system {
             bindings = <
-_____  &none         &none        &none        &none        &reset           &reset      &none          &none        &none        &none      _____
+_____  &none         &none        &none        &none        &sys_reset       &sys_reset  &none          &none        &none        &none      _____
 _____  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none       &to 0          &to 1        &to 2        &to BV_AL1 _____
 _____  &bt BT_CLR    &none        &none        &none        &bootloader      &bootloader &none          &none        &none        &none      _____
                                 _____          _____        _____            _____       _____
