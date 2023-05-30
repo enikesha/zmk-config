@@ -174,7 +174,7 @@
         };
         bv_bt4 {
             bindings = <&bt BT_SEL 4>;
-            key-positions = <7 10u>;
+            key-positions = <7 10>;
             timeout-ms = < COMBO_TIMEOUT >;
         };
         bv_bt_clr {
