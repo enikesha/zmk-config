@@ -35,7 +35,7 @@
 // tapping-term-ms = <300>;
 #define TAPPING_TERM 300 
 // timeout-ms = <30>;
-#define COMBO_TIMEOUT 40
+#define COMBO_TIMEOUT 30
 
 #ifndef NUBS
     #define NUBS NON_US_BSLH
@@ -54,7 +54,7 @@
 
 &mt {
     tapping-term-ms = <200>;
-    quick-tap-ms = <200>;
+    // quick-tap-ms = <200>;
     flavor = "tap-preferred";
  };
 
@@ -440,8 +440,8 @@
 
         bv_alpha1rus {
             bindings = <
-                _____             &mtl LCTL K        &mtl LALT D   &mtl LGUI L   _____            _____        &mtr LGUI V    &mtr LALT E     &mtr LCTL R      _____
-                &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT J
+                _____             &mtl LCTL K        &mtl LALT D   &mtl LGUI L   _____            _____        &mtr LGUI V    &mtr LALT E     &mtr LCTL J      _____
+                &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT R
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                                                                    &mt LSHFT SPC &hdel HYPER      &sl_ar3      &sl_ar2
             >;
