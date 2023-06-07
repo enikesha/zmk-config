@@ -431,7 +431,7 @@
         };
         bv_alpha3 {
             bindings = <
-                _____             &kp LS(SQT)        &kp LS(LBKT)  &kp LS(RBKT)  _____            _____        &kp LS(BSLH)      &kp LS(COMMA)   &kp LS(DOT)      _____
+                _____             &kp LS(SQT)        &kp LS(LBKT)  &kp LS(RBKT)  _____            _____        &kp LS(BSLH)      &kp SEMI        &kp LS(SEMI)     _____
                 &kp GRAVE         &kp SQT            &kp LBKT      &kp RBKT      _____            _____        &kp BSLH          &kp COMMA       &kp DOT          &kp FSLH
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                                                                    &mt LSHFT SPC &bspc_del        _____        &to BV_AL1 
@@ -456,7 +456,7 @@
         };
         bv_alpha3rus {
             bindings = <
-                _____             _____              _____         _____         _____            _____        &kp NON_US_BSLH   _____           _____            _____
+                _____             _____              _____         &kp RBKT      _____            _____        &kp NON_US_BSLH   &kp LS(N4)      &kp LS(N6)       _____
                 &kp GRAVE         &kp SQT            &kp I         &kp O         _____            _____        &kp BSLH          &kp LS(FSLH)    &kp FSLH         &kp Z
                 _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                                                                    &mt LSHFT SPC &bspc_del         _____        &to BV_AR1 
