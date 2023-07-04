@@ -8,25 +8,45 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-// Layers
-#define COLEMAK 0
-#define QWERTY  1
-#define ISRT    2
-#define EXT     3
-#define NAV     4
-#define FUN     5
-#define SYSTEM  6
+// // Layers
+// #define COLEMAK 0
+// #define QWERTY  1
+// #define ISRT    2
+// #define EXT     3
+// #define NAV     4
+// #define FUN     5
+// #define SYSTEM  6
 
-#define BV_AL1   7
-#define BV_AL2   8
-#define BV_AL3   9
-#define BV_AR1   10
-#define BV_AR2   11
-#define BV_AR3   12
-#define BV_NUM   13
-#define BV_NAV   14
-#define BV_FUN   15
-#define BV_MED   16
+// #define BV_AL1   7
+// #define BV_AL2   8
+// #define BV_AL3   9
+// #define BV_AR1   10
+// #define BV_AR2   11
+// #define BV_AR3   12
+// #define BV_NUM   13
+// #define BV_NAV   14
+// #define BV_FUN   15
+// #define BV_MED   16
+
+// Layers
+#define BV_AL1   0
+#define BV_AL2   1
+#define BV_AL3   2
+#define BV_AR1   3
+#define BV_AR2   4
+#define BV_AR3   5
+#define BV_NUM   6
+#define BV_NAV   7
+#define BV_FUN   8
+#define BV_MED   9
+
+#define COLEMAK 10
+#define QWERTY  11
+#define ISRT    12
+#define EXT     13
+#define NAV     14
+#define FUN     15
+#define SYSTEM  16
 
 // Bindings
 
@@ -96,12 +116,12 @@
 
         to_qwerty { 
             bindings = <&to QWERTY>;
-            key-positions = < 1 2 3 >;
+            key-positions = < 0 1 2 >;
             timeout-ms = < COMBO_TIMEOUT >;
         };
         to_colemak { 
             bindings = <&to COLEMAK>;
-            key-positions = < 6 7 8 >;
+            key-positions = < 7 8 9 >;
             timeout-ms = < COMBO_TIMEOUT >;
         };        
 
@@ -350,166 +370,172 @@
     keymap {
         compatible = "zmk,keymap";
 
-        colemak {
-            bindings = <
-  &kp Q         &kp W     &kp F      &kp P           &kp B              &kp J       &kp L           &kp U        &kp Y    &kp SEMI
-  &kp A         &kp R     &kp S      &kp T           &kp G              &kp M       &kp N           &kp E        &kp I    &kp O
-  &kp Z         &kp X     &kp C      &kp D           &kp V              &kp K       &kp H           &kp COMMA    &kp DOT  &kp FSLH
-                                     &rt LSHFT SPC         &td_ext            &none       &td_nav
-            >;
-        };
-
-        qwerty {
-            bindings = <
-  &kp Q         &kp W     &kp E      &kp R           &kp T              &kp Y       &kp U           &kp I        &kp O    &kp P
-  &kp A         &kp S     &kp D      &kp F           &kp G              &kp H       &kp J           &kp K        &kp L    &kp SEMI
-  &kp Z         &kp X     &kp C      &kp V           &kp B              &kp N       &kp M           &kp COMMA    &kp DOT  &kp FSLH
-                                     &rt LSHFT SPC         &td_ext            &none       &td_nav
-            >;
-        };
-
-        isrtgp {
-            bindings = <
-  &kp Y         &kp C     &kp L      &kp M           &kp K              &kp Z       &kp F           &kp U        &kp COMMA &kp SEMI
-  &kp I         &kp S     &kp R      &kp T           &kp G              &kp P       &kp N           &kp E        &kp A     &kp O
-  &kp Q         &kp V     &kp W      &kp D           &kp J              &kp B       &kp H           &kp FSLH     &kp DOT   &kp X
-                                     &rt LSHFT SPC          &td_ext            &none       &td_nav
-            >;
-        };
-        
-        extended {
-            bindings = <
-  &sk LSHFT     &sk LCTRL &sk LALT   &sk LGUI        &sk F19            &kp NUBS    &kp MINUS       &kp EQUAL    &kp LBKT  &kp RBKT
-  &kp N1        &kp N2    &kp N3     &kp N4          &kp N5             &kp N6      &kp N7          &kp N8       &kp N9    &kp N0 
-  &sk RSHFT     &sk RCTRL &sk RALT   &sk RGUI        &kp LG(SPACE)      &kp GRAVE   &kp SQT         &kp COMMA    &kp DOT   &kp BSLH
-                                     &none           &rt LSHFT SPC         &kp F19     &rt LSHFT SPC 
-            >;
-        };
-
-        navigation {
-            bindings = <
-  &kp C_EJECT   &none     &none      &none           &none              &kp HOME    &kp PG_DN       &kp PG_UP    &kp END          &kp DEL
-  &kp LSHFT     &kp LCTRL &kp LALT   &kp LGUI        &kp K_APP          &kp LEFT    &kp DOWN        &kp UP       &kp RIGHT        &kp BSPC
-  &none         &none     &none      &none           &none              &kp INS     &kp TAB         &kp LA(ESC)  &kp LA(LS(ESC))  &kp LA(LC(TAB))
-                                     &kp SPACE       &mo FUN            &none       &none
-            >;
-        };
-
-        function {
-            bindings = <
-  &kp F1        &kp F2    &kp F3     &kp F4          &none              &kp KP_NUM  &kp PRINTSCREEN   &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CAPS
-  &kp F5        &kp F6    &kp F7     &kp F8          &to SYSTEM         &none       &kp LGUI          &kp LALT        &kp LCTRL        &kp LSHFT
-  &kp F9        &kp F10   &kp F11    &kp F12         &none              &to SYSTEM  &kp C_PLAY_PAUSE  &kp C_VOL_DN    &kp C_VOL_UP     &kp C_MUTE
-                                     &none           &none              &none       &none
-            >;
-        };
-
-        system {
-            bindings = <
-  &none         &none        &none        &none        &sys_reset       &sys_reset  &none          &none        &none        &none
-  &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none       &to 0          &to 1        &to 2        &to BV_AL1
-  &bt BT_CLR    &none        &none        &none        &bootloader      &bootloader &none          &none        &none        &none
-                                          &none        &none            &none       &none
-            >;
-        };
-
 // --------------------------------------------------------------------------------------------------------------------------------------------
 // Ben Vallack 18-keys layout
 // --------------------------------------------------------------------------------------------------------------------------------------------
 
-        bv_alpha1 {
-            label = "Alpha 1";
-            bindings = <
-                _____             &mtl LCTL L        &mtl LALT G   &mtl LGUI D   _____            _____        &mtr LGUI H       &mtr LALT U     &mtr LCTL O      _____  
-                &mtl LSHFT I      &mol BV_NUM R      &mol BV_FUN S &mol BV_NAV T _____            _____        &mor BV_NAV N     &mor BV_FUN E   &mor BV_NUM A    &mtr RSHFT C
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   &rt LSHFT SPC &rt HYPERSPC    &sl_al3      &sl_al2
-            >;
-        };
-        bv_alpha2 {
-            label = "Alpha 2";
-            bindings = <
-                _____             &kp V              &kp W         &kp M         _____            _____        &kp F             &kp SEMI        &kp NON_US_BSLH  _____
-                &kp Q             &kp J              &kp P         &kp K         _____            _____        &kp B             &kp Z           &kp X            &kp Y
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   _____         _____            &to BV_AL1   _____
-            >;
-        };
-        bv_alpha3 {
-            label = "Alpha 3";
-            bindings = <
-                _____             &kp LS(SQT)        &kp LS(LBKT)  &kp LS(RBKT)  _____            _____        &kp LS(BSLH)      &kp SEMI        &kp LS(SEMI)     _____
-                &kp GRAVE         &kp SQT            &kp LBKT      &kp RBKT      _____            _____        &kp BSLH          &kp COMMA       &kp DOT          &kp FSLH
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   _____         _____            _____        &to BV_AL1 
-            >;
-        };
+bv_alpha1 {
+    label = "Alpha 1";
+    bindings = <
+    _____             &mtl LCTL L        &mtl LALT G   &mtl LGUI D   _____            _____        &mtr LGUI H       &mtr LALT U     &mtr LCTL O      _____  
+    &mtl LSHFT I      &mol BV_NUM R      &mol BV_FUN S &mol BV_NAV T _____            _____        &mor BV_NAV N     &mor BV_FUN E   &mor BV_NUM A    &mtr RSHFT C
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       &rt LSHFT SPC &rt HYPERSPC    &sl_al3      &sl_al2
+    >;
+};
+bv_alpha2 {
+    label = "Alpha 2";
+    bindings = <
+    _____             &kp V              &kp W         &kp M         _____            _____        &kp F             &kp SEMI        &kp NON_US_BSLH  _____
+    &kp Q             &kp J              &kp P         &kp K         _____            _____        &kp B             &kp Z           &kp X            &kp Y
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       _____         _____            &to BV_AL1   _____
+    >;
+};
+bv_alpha3 {
+    label = "Alpha 3";
+    bindings = <
+    _____             &kp LS(SQT)        &kp LS(LBKT)  &kp LS(RBKT)  _____            _____        &kp LS(BSLH)      &kp SEMI        &kp LS(SEMI)     _____
+    &kp GRAVE         &kp SQT            &kp LBKT      &kp RBKT      _____            _____        &kp BSLH          &kp COMMA       &kp DOT          &kp FSLH
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       _____         _____            _____        &to BV_AL1 
+    >;
+};
 
-        bv_alpha1rus {
-            label = "Alpha 1R";
-            bindings = <
-                _____             &mtl LCTL K        &mtl LALT D   &mtl LGUI L   _____            _____        &mtr LGUI V       &mtr LALT E     &mtr LCTL J      _____
-                &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT R
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   &rt LSHFT SPC &rt HYPERSPC     &sl_ar3      &sl_ar2
-            >;
-        };
-        bv_alpha2rus {
-            label = "Alpha 2R";
-            bindings = <
-                _____             &kp SEMI           &kp U         &kp LBKT      _____            _____        &kp A             &kp X           &kp SQT          _____
-                &kp DOT           &kp Q              &kp G         &mol BV_NAV W _____            _____        &kp COMMA         &kp P           &kp M            &kp S
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   _____         _____            &to BV_AR1   _____
-            >;
-        };
-        bv_alpha3rus {
-            label = "Alpha 3R";
-            bindings = <
-                _____             _____              _____         &kp RBKT      _____            _____        &kp NON_US_BSLH   &kp LS(N4)      &kp LS(N6)       _____
-                &kp GRAVE         &kp SQT            &kp I         &kp O         _____            _____        &kp BSLH          &kp LS(FSLH)    &kp FSLH         &kp Z
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   _____         _____            _____        &to BV_AR1 
-            >;
-        };
+bv_alpha1rus {
+    label = "Alpha 1R";
+    bindings = <
+    _____             &mtl LCTL K        &mtl LALT D   &mtl LGUI L   _____            _____        &mtr LGUI V       &mtr LALT E     &mtr LCTL J      _____
+    &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT R
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       &rt LSHFT SPC &rt HYPERSPC     &sl_ar3      &sl_ar2
+    >;
+};
+bv_alpha2rus {
+    label = "Alpha 2R";
+    bindings = <
+    _____             &kp SEMI           &kp U         &kp LBKT      _____            _____        &kp A             &kp X           &kp SQT          _____
+    &kp DOT           &kp Q              &kp G         &kp W         _____            _____        &kp COMMA         &kp P           &kp M            &kp S
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       _____         _____            &to BV_AR1   _____
+    >;
+};
+bv_alpha3rus {
+    label = "Alpha 3R";
+    bindings = <
+    _____             _____              _____         &kp RBKT      _____            _____        &kp NON_US_BSLH   &kp LS(N4)      &kp LS(N6)       _____
+    &kp GRAVE         &kp SQT            &kp I         &kp O         _____            _____        &kp BSLH          &kp LS(FSLH)    &kp FSLH         &kp Z
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       _____         _____            _____        &to BV_AR1 
+    >;
+};
 
-        bv_numbers {
-            label = "Nums";
-            bindings = <
-                _____          &kp KP_DIVIDE     &kp KP_PLUS       &kp N5        _____            _____        &kp N6            &kp MINUS       &kp EQUAL        _____
-                &kp N1         &kp N2            &kp N3            &kp N4        _____            _____        &kp N7            &kp N8          &kp N9           &kp N0
-                _____          _____             _____             _____         _____            _____        _____             _____           _____            _____
-                                                                   &mt LSHFT SPC &kp RALT         &kp COMMA    &kp DOT
-            >;
-        };
+bv_numbers {
+    label = "Nums";
+    bindings = <
+    _____          &kp KP_DIVIDE     &kp KP_PLUS       &kp N5        _____            _____        &kp N6            &kp MINUS       &kp EQUAL        _____
+    &kp N1         &kp N2            &kp N3            &kp N4        _____            _____        &kp N7            &kp N8          &kp N9           &kp N0
+    _____          _____             _____             _____         _____            _____        _____             _____           _____            _____
+                                                       &mt LSHFT SPC &kp RALT         &kp COMMA    &kp DOT
+    >;
+};
 
-        bv_navigation {
-            label = "Nav";
-            bindings = <
-                _____             &kp LCTL           &kp LALT      &kp LGUI      _____            _____        &kp PG_DN         &kp UP          &kp PG_UP        _____
-                &kp LSHFT         &kp TAB            &kp HOME      &kp END       _____            _____        &kp LEFT          &kp DOWN        &kp RIGHT        &bspc_del
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   &mt LSHFT SPC _____            _____        &mt LSHFT SPC
-            >;
-        };
+bv_navigation {
+    label = "Nav";
+    bindings = <
+    _____             &kp LCTL           &kp LALT      &kp LGUI      _____            _____        &kp PG_DN         &kp UP          &kp PG_UP        _____
+    &kp LSHFT         &kp TAB            &kp HOME      &kp END       _____            _____        &kp LEFT          &kp DOWN        &kp RIGHT        &bspc_del
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       &mt LSHFT SPC _____            _____        &mt LSHFT SPC
+    >;
+};
 
-        bv_function {
-            label = "Funs";
-            bindings = <
-                _____             &kp LCTL           &kp LALT      &mtl LGUI F5  _____            _____        &mtr LGUI F6      &mtr LALT F11   &mtr LCTL F12    _____
-                &mtl LSHFT F1     &kp F2             &kp F3        &kp F4        _____            _____        &kp F7            &kp F8          &kp F9           &mtr RSHFT F10
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   &kp LSHFT     &kp PRINTSCREEN  &kp C_EJECT  &mo BV_MED
-            >;
-        };
-        bv_media {
-            label = "Sys";
-            bindings = <
-                _____             _____              _____         &kp F5        _____            _____        &kp F6            &kp C_VOL_DN    &kp C_VOL_UP     _____
-                &kp C_BRI_DN      &kp C_BRI_UP       &kp F3        &kp F4        _____            _____        &kp C_PREV        &kp C_PP        &kp C_NEXT       &kp C_MUTE
-                _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                                   _____         &bootloader      &bootloader  _____                                                                      
-            >;
-        };
+bv_function {
+    label = "Funs";
+    bindings = <
+    _____             &kp LCTL           &kp LALT      &mtl LGUI F5  _____            _____        &mtr LGUI F6      &mtr LALT F11   &mtr LCTL F12    _____
+    &mtl LSHFT F1     &kp F2             &kp F3        &kp F4        _____            _____        &kp F7            &kp F8          &kp F9           &mtr RSHFT F10
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       &kp K_APP     &kp PRINTSCREEN  &kp C_EJECT  &mo BV_MED
+    >;
+};
+bv_media {
+    label = "Sys";
+    bindings = <
+    _____             _____              _____         &kp F5        _____            _____        &kp F6            &kp C_VOL_DN    &kp C_VOL_UP     _____
+    &kp C_BRI_DN      &kp C_BRI_UP       &kp F3        &kp F4        _____            _____        &kp C_PREV        &kp C_PP        &kp C_NEXT       &kp C_MUTE
+    _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
+                                                       _____         &bootloader      &bootloader  _____                                                                      
+    >;
+};
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------
+//  standard layouts
+// --------------------------------------------------------------------------------------------------------------------------------------------
+        
+colemak {
+    bindings = <
+    &kp Q         &kp W     &kp F      &kp P           &kp B              &kp J       &kp L           &kp U        &kp Y    &kp SEMI
+    &kp A         &kp R     &kp S      &kp T           &kp G              &kp M       &kp N           &kp E        &kp I    &kp O
+    &kp Z         &kp X     &kp C      &kp D           &kp V              &kp K       &kp H           &kp COMMA    &kp DOT  &kp FSLH
+                                       &rt LSHFT SPC   &td_ext            &none       &td_nav
+    >;
+};
+
+qwerty {
+    bindings = <
+    &kp Q         &kp W     &kp E      &kp R           &kp T              &kp Y       &kp U           &kp I        &kp O    &kp P
+    &kp A         &kp S     &kp D      &kp F           &kp G              &kp H       &kp J           &kp K        &kp L    &kp SEMI
+    &kp Z         &kp X     &kp C      &kp V           &kp B              &kp N       &kp M           &kp COMMA    &kp DOT  &kp FSLH
+                                       &rt LSHFT SPC   &td_ext            &none       &td_nav
+    >;
+};
+
+isrtgp {
+    bindings = <
+    &kp Y         &kp C     &kp L      &kp M           &kp K              &kp Z       &kp F           &kp U        &kp COMMA &kp SEMI
+    &kp I         &kp S     &kp R      &kp T           &kp G              &kp P       &kp N           &kp E        &kp A     &kp O
+    &kp Q         &kp V     &kp W      &kp D           &kp J              &kp B       &kp H           &kp FSLH     &kp DOT   &kp X
+                                       &rt LSHFT SPC   &td_ext            &none       &td_nav
+    >;
+};
+
+extended {
+    bindings = <
+    &sk LSHFT     &sk LCTRL &sk LALT   &sk LGUI        &sk F19            &kp NUBS    &kp MINUS       &kp EQUAL    &kp LBKT  &kp RBKT
+    &kp N1        &kp N2    &kp N3     &kp N4          &kp N5             &kp N6      &kp N7          &kp N8       &kp N9    &kp N0 
+    &sk RSHFT     &sk RCTRL &sk RALT   &sk RGUI        &kp LG(SPACE)      &kp GRAVE   &kp SQT         &kp COMMA    &kp DOT   &kp BSLH
+                                       &none           &rt LSHFT SPC      &kp F19     &rt LSHFT SPC 
+    >;
+};
+
+navigation {
+    bindings = <
+    &kp C_EJECT   &none     &none      &none           &none              &kp HOME    &kp PG_DN       &kp PG_UP    &kp END          &kp DEL
+    &kp LSHFT     &kp LCTRL &kp LALT   &kp LGUI        &kp K_APP          &kp LEFT    &kp DOWN        &kp UP       &kp RIGHT        &kp BSPC
+    &none         &none     &none      &none           &none              &kp INS     &kp TAB         &kp LA(ESC)  &kp LA(LS(ESC))  &kp LA(LC(TAB))
+                                       &kp SPACE       &mo FUN            &none       &none
+    >;
+};
+
+function {
+    bindings = <
+    &kp F1        &kp F2    &kp F3     &kp F4          &none              &kp KP_NUM  &kp PRINTSCREEN   &kp SCROLLLOCK  &kp PAUSE_BREAK  &kp CAPS
+    &kp F5        &kp F6    &kp F7     &kp F8          &to SYSTEM         &none       &kp LGUI          &kp LALT        &kp LCTRL        &kp LSHFT
+    &kp F9        &kp F10   &kp F11    &kp F12         &none              &to SYSTEM  &kp C_PLAY_PAUSE  &kp C_VOL_DN    &kp C_VOL_UP     &kp C_MUTE
+                                       &none           &none              &none       &none
+    >;
+};
+
+system {
+    bindings = <
+    &none         &none        &none        &none        &sys_reset       &sys_reset  &none          &none        &none        &none
+    &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &none       &to 0          &to 1        &to 2        &to BV_AL1
+    &bt BT_CLR    &none        &none        &none        &bootloader      &bootloader &none          &none        &none        &none
+                                            &none        &none            &none       &none
+    >;
+};
+
     };
 };
