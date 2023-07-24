@@ -146,19 +146,25 @@
 
         bv_copy_cut {
             bindings = <&td_copy_cut>;
-            key-positions = <1 2>;
+            key-positions = <10 11>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
         bv_paste {
             bindings = <&kp LC(V)>;
-            key-positions = <2 3>;
+            key-positions = <12 13>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
         bv_escape {
             bindings = <&kp ESC>;
             key-positions = <7 8>;
+            timeout-ms = < COMBO_TIMEOUT >;
+            layers = < BV_AL1 BV_AR1 >;
+        };
+        bv_escape_left {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
@@ -177,6 +183,12 @@
         bv_backspace {
             bindings = <&kp BACKSPACE>;
             key-positions = <16 17>;
+            timeout-ms = < COMBO_TIMEOUT >;
+            layers = < BV_AL1 BV_AR1 >;
+        };
+        bv_delete {
+            bindings = <&kp DEL>;
+            key-positions = <18 19>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
