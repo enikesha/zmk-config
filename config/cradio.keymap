@@ -134,18 +134,31 @@
             bindings = <&to_rus>;
             key-positions = <16 17 18>;
             timeout-ms = < 60 >;
+        };
+
+        bv_to_num {
+            bindings = <&to BV_NUM>;
+            key-positions = <11 18>;
+            timeout-ms = < 60 >;
             layers = < BV_AL1 BV_AR1 >;
         };
 
-        bv_escape {
-            bindings = <&kp ESC>;
-            key-positions = <7 8>;
+
+        bv_copy_cut {
+            bindings = <&td_copy_cut>;
+            key-positions = <1 2>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
-        bv_escape_left {
+        bv_paste {
+            bindings = <&kp LC(V)>;
+            key-positions = <2 3>;
+            timeout-ms = < COMBO_TIMEOUT >;
+            layers = < BV_AL1 BV_AR1 >;
+        };
+        bv_escape {
             bindings = <&kp ESC>;
-            key-positions = <1 2>;
+            key-positions = <7 8>;
             timeout-ms = < COMBO_TIMEOUT >;
             layers = < BV_AL1 BV_AR1 >;
         };
@@ -297,12 +310,20 @@
 
         td_bv_num_a3: tap_dance_bv_num_a3 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DANCE_EXT";
+            label = "TAP_DANCE_BV_NUM";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
             bindings =
                 <&bvnum_shifted>,
                 <&mo BV_AL3>;
+        };
+
+        td_copy_cut: tap_dance_copy_cut {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DANCE_COPY_CUT";
+            #binding-cells = <0>;
+            tapping-term-ms = <300>;
+            bindings = <&kp LC(C)>, <&kp LC(X)>;
         };
 
         mtl: left_hand_positional_hold_tap {
