@@ -380,7 +380,7 @@
             flavor = "balanced";
             tapping-term-ms = < TAPPING_TERM >;
             quick-tap-ms = <200>;
-            bindings = <&kp LSHFT, &r_to_c>;
+            bindings = <&kp>, <&r_to_c>;
             hold-trigger-key-positions = < LEFT_HALF THUMBS >;    // <---[[left-hand keys]]
         };
 
@@ -519,7 +519,7 @@ bv_alpha1rus {
     label = "Alpha 1R";
     bindings = <
     _____             &mtl LCTL K        &mtl LALT D   &mtl LGUI L   _____            _____        &mtr LGUI V       &mtr LALT E     &mtr LCTL J      _____
-    &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr_r_to_c 0 0
+    &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr_r_to_c LSHFT 0
     _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                                                        &lt BV_NAV SPC &bvnum_shifted  &sl_ar3      &sl_ar2
     >;
