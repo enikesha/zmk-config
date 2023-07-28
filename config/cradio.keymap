@@ -380,7 +380,7 @@
             flavor = "balanced";
             tapping-term-ms = < TAPPING_TERM >;
             quick-tap-ms = <200>;
-            bindings = <&kp LSHFT>, <&r_to_c>;
+            bindings = <&kp LSHFT, &r_to_c>;
             hold-trigger-key-positions = < LEFT_HALF THUMBS >;    // <---[[left-hand keys]]
         };
 
