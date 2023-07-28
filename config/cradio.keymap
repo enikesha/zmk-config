@@ -49,8 +49,8 @@
 #define SYSTEM  16
 
 #define LEFT_HALF 0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 
-#define THUMBS    30 31 32 33
 #define RIGHT_HALF 5 6 7 8 9 15 16 17 18 19 25 26 27 28 29
+#define THUMBS    30 31 32 33
 
 // Bindings
 
@@ -373,6 +373,17 @@
             hold-trigger-key-positions = < LEFT_HALF THUMBS >;    // <---[[left-hand keys]]
         };
     
+        mtr_r_to_c: right_hand_positional_hold_tap_ru {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RIGHT_POSITIONAL_MOD_TAP_ru";
+            #binding-cells = <0>;
+            flavor = "balanced";
+            tapping-term-ms = < TAPPING_TERM >;
+            quick-tap-ms = <200>;
+            bindings = <&kp RSHFT>, <&r_to_c>;
+            hold-trigger-key-positions = < LEFT_HALF THUMBS >;    // <---[[left-hand keys]]
+        };
+
         mol: homerow_layers_left {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_POSITIONAL_LAYER_TAP";
@@ -435,6 +446,38 @@
             quick-tap-ms = <200>;
             bindings = <&kp>, <&bspc_del>;
         };
+        p_to_z: p_to_z {
+            compatible = "zmk,behavior-mod-morph";
+            label = "p_to_z";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp Z>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+        m_to_x: m_to_x {
+            compatible = "zmk,behavior-mod-morph";
+            label = "m_to_x";
+            #binding-cells = <0>;
+            bindings = <&kp M>, <&kp X>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+        r_to_c: r_to_c {
+            compatible = "zmk,behavior-mod-morph";
+            label = "r_to_c";
+            #binding-cells = <0>;
+            bindings = <&kp R>, <&kp C>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
+        semi_to_v: semi_to_v {
+            compatible = "zmk,behavior-mod-morph";
+            label = "semi_to_v";
+            #binding-cells = <0>;
+            bindings = <&kp SEMI>, <&kp V>;
+            mods = <(MOD_LCTL)>;
+            keep-mods = <(MOD_LCTL)>;
+        };
     };
 
     keymap {
@@ -476,7 +519,7 @@ bv_alpha1rus {
     label = "Alpha 1R";
     bindings = <
     _____             &mtl LCTL K        &mtl LALT D   &mtl LGUI L   _____            _____        &mtr LGUI V       &mtr LALT E     &mtr LCTL J      _____
-    &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr RSHFT R
+    &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr_r_to_c
     _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                                                        &lt BV_NAV SPC &bvnum_shifted  &sl_ar3      &sl_ar2
     >;
@@ -484,8 +527,8 @@ bv_alpha1rus {
 bv_alpha2rus {
     label = "Alpha 2R";
     bindings = <
-    _____             &kp SEMI           &kp U         &kp LBKT      _____            _____        &kp A             &kp X           &kp SQT          _____
-    &kp DOT           &kp Q              &kp G         &kp W         _____            _____        &kp COMMA         &kp P           &kp M            &kp S
+    _____             &semi_to_v         &kp U         &kp LBKT      _____            _____        &kp A             &kp X           &kp SQT          _____
+    &kp DOT           &kp Q              &kp G         &kp W         _____            _____        &kp COMMA         &p_to_z         &m_to_x          &kp S
     _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                                                        _____         _____            &to BV_AR1   _____
     >;
