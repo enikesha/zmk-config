@@ -83,6 +83,10 @@
     // quick-tap-ms = <200>;
     flavor = "tap-preferred";
  };
+&lt {
+    tapping-term-ms = <200>;
+    flavor = "tap-preferred";
+ };
 
 / {
     combos {
