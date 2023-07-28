@@ -376,11 +376,11 @@
         mtr_r_to_c: right_hand_positional_hold_tap_ru {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_POSITIONAL_MOD_TAP_ru";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = < TAPPING_TERM >;
             quick-tap-ms = <200>;
-            bindings = <&kp RSHFT>, <&r_to_c>;
+            bindings = <&kp>, <>;
             hold-trigger-key-positions = < LEFT_HALF THUMBS >;    // <---[[left-hand keys]]
         };
 
@@ -519,7 +519,7 @@ bv_alpha1rus {
     label = "Alpha 1R";
     bindings = <
     _____             &mtl LCTL K        &mtl LALT D   &mtl LGUI L   _____            _____        &mtr LGUI V       &mtr LALT E     &mtr LCTL J      _____
-    &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr_r_to_c
+    &mtl LSHFT B      &mol BV_NUM H      &mol BV_FUN C &mol BV_NAV N _____            _____        &mor BV_NAV Y     &mor BV_FUN T   &mor BV_NUM F    &mtr_r_to_c RSFT &r_to_c
     _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
                                                        &lt BV_NAV SPC &bvnum_shifted  &sl_ar3      &sl_ar2
     >;
