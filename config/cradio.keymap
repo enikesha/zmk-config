@@ -93,7 +93,7 @@
         compatible = "zmk,combos";
         lock {
             bindings = <&kp LG(L)>;
-            key-positions = < 9 19 29 >;
+            key-positions = < 1 3 >;
             timeout-ms = < COMBO_TIMEOUT >;
         };
 
