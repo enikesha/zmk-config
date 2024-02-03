@@ -351,7 +351,7 @@ alpha1 {
     _____             &mtl LCTL L        &mtl LALT G   &mtl LGUI D   _____            _____        &mtr LGUI H       &mtr LALT U     &mtr LCTL O      _____  
     &msl LSHFT I      &mol NUM R         &mol FUN S    &mol NAV T    _____            _____        &mor NAV N        &mor FUN E      &mor NUM A       &msr RSHFT C
     _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                       &mt NAV SPC   &num_shifted     &sl_al3      &sl_al2
+                                                       &lt NAV SPC   &num_shifted     &sl_al3      &sl_al2
     >;
 };
 alpha2 {
@@ -378,7 +378,7 @@ alpha1rus {
     _____             &mtl LCTL K        &mtl LALT D   &mtl LGUI L   _____            _____        &mtr LGUI V       &mtr LALT E     &mtr LCTL J      _____
     &msl LSHFT B      &mol NUM H         &mol FUN C    &mol NAV N    _____            _____        &mor NAV Y        &mor FUN T      &mor NUM F       &msr RSHFT R
     _____             _____              _____         _____         _____            _____        _____             _____           _____            _____
-                                                       &mt NAV SPC   &num_shifted     &sl_ar3      &sl_ar2
+                                                       &lt NAV SPC   &num_shifted     &sl_ar3      &sl_ar2
     >;
 };
 alpha2rus {
