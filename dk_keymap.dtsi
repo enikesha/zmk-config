@@ -229,7 +229,7 @@ macros {
     to_eng_lock: to_eng_lock {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&to AL1 &kp LC(LS(N1)) &kp LG(L)>;
+        bindings = <&to AL1 &kp LC(LS(N1)) &kp F13>;
     };
     to_rus: to_rus {
         compatible = "zmk,behavior-macro";
