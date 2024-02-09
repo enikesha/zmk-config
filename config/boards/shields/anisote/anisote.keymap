@@ -328,7 +328,7 @@
         compatible = "zmk,keymap";
         LAT {
             bindings = <
-                _____               &kp LAT_1           &kp LAT_2           &lt L_ADD LAT_3            _____
+                &kp N1              &kp LAT_1           &kp LAT_2           &lt L_ADD LAT_3           &kp N1
                 &lt L_NAV LAT_4     &kp LAT_5           &kp LAT_6           &lt L_SYM LAT_7           THUMB_L       
             >;
         };
@@ -364,7 +364,7 @@
         };
         BLE {
             bindings = <
-                _____               &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        
+                _____               &bt BT_SEL 2        &bt BT_SEL 1        &bt BT_SEL 0        _____
                 &out OUT_TOG        &bt BT_SEL 5        &bt BT_SEL 4        &bt BT_SEL 3           THUMB_L          
             >;
         };
