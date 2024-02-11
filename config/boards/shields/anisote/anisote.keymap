@@ -181,7 +181,6 @@
         combo_yo_en         { _L <L_LAT>; _T <T3>; _K <K2 K9 K10>;      _B <&none>; };
         combo_yo_ru         { _L <L_RUS>; _T <T3>; _K <K2 K9 K10>;      _B <&kp YO_RU>; };
 
-
         // Punctuation
         combo_comma         { _L <L_LAT>; _T <T2>; _K <K4 K7>;          _B <&kp COMMA>; };
         combo_comma_ru      { _L <L_RUS>; _T <T2>; _K <K4 K7>;          _B <&kp LS(FSLH)>; };
@@ -244,7 +243,7 @@
         // controls
         combo_enter         { _L <L_ALL>; _T <T2>; _K <K4 K9>;          _B <&kp ENTER>; };
         combo_backspace     { _L <L_ALL>; _T <T2>; _K <K3 K9>;          _B <&kp BACKSPACE>; };
-        combo_ctrl_bspc     { _L <L_ALL>; _T <T2>; _K <K2 K3 K9>;       _B <&kp LC(BACKSPACE)>; };
+        combo_bspc_word     { _L <L_ALL>; _T <T2>; _K <K2 K3 K9>;       _B <&kp LA(BACKSPACE)>; };
         combo_delete        { _L <L_ALL>; _T <T2>; _K <K3 K7>;          _B <&kp DELETE>; };
         combo_esc           { _L <L_ALL>; _T <T2>; _K <K2 K7>;          _B <&kp ESC>; };
         combo_tab           { _L <L_ALL>; _T <T4>; _K <K2 K3 K4>;       _B <&kp TAB>; };
