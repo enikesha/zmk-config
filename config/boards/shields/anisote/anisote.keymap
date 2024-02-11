@@ -201,9 +201,9 @@
         combo_question      { _L <L_LAT>; _T <T3>; _K <K4 K6 K10>;      _B <&kp LS(SLASH)>; };
         combo_question_ru   { _L <L_RUS>; _T <T3>; _K <K4 K6 K10>;      _B <&kp LS(N7)>; };
 
-        combo_slash         { _L <L_LTR>; _T <T2>; _K <K4 K6>;    _B <&kp KP_DIVIDE>; };
-        combo_single_quote  { _L <L_LTR>; _T <T3>; _K <K4 K7 K8>; _B <&kp SQT>; };
-        combo_repeat        { _L <L_LTR>; _T <T2>; _K <K1 K10>;   _B <&key_repeat>; };
+        combo_slash         { _L <L_LTR>; _T <T2>; _K <K4 K6>;          _B <&kp KP_DIVIDE>; };
+        combo_single_quote  { _L <L_LTR>; _T <T3>; _K <K4 K7 K8>;       _B <&kp SQT>; };
+        combo_repeat        { _L <L_LTR>; _T <T2>; _K <K1 K10>;         _B <&key_repeat>; };
 
         // NUM layer 
         combo_seven         { _L <L_NUM>; _T <T2>; _K <K3 K4>;          _B <&kp N7>; };
@@ -229,39 +229,39 @@
         combo_nav_ls_la_esc { _L <L_NAV>; _T <T2>; _K <K7 K8>;          _B <&kp LS(LA(ESC))>; };
 
         // mods  
-        combo_shift         { _L <L_ALL>; _T <T2>; _K <K6 K1>;    _B <&sk LSHFT>; slow-release;};
-        combo_control       { _L <L_ALL>; _T <T2>; _K <K6 K7>;    _B <&sk LCTRL>; slow-release;};
-        combo_alt           { _L <L_ALL>; _T <T2>; _K <K6 K8>;    _B <&sk LALT>;  slow-release;};
-        combo_gui           { _L <L_ALL>; _T <T2>; _K <K6 K9>;    _B <&sk LGUI>;  slow-release;};
-        combo_shift_lock    { _L <L_ALL>; _T <T2>; _K <K3 K8>;    _B <&kt LSHFT>; };
+        combo_shift         { _L <L_ALL>; _T <T2>; _K <K6 K1>;          _B <&sk LSHFT>; slow-release;};
+        combo_control       { _L <L_ALL>; _T <T2>; _K <K6 K7>;          _B <&sk LCTRL>; slow-release;};
+        combo_alt           { _L <L_ALL>; _T <T2>; _K <K6 K8>;          _B <&sk LALT>;  slow-release;};
+        combo_gui           { _L <L_ALL>; _T <T2>; _K <K6 K9>;          _B <&sk LGUI>;  slow-release;};
+        combo_shift_lock    { _L <L_ALL>; _T <T2>; _K <K3 K8>;          _B <&kt LSHFT>; };
 
         // one shot layers
-        combo_fun           { _L <L_ALL>; _T <T2>; _K <K3 K6>;     _B <&sl L_FUN>;    slow-release; };
-        combo_sys           { _L <L_ALL>; _T <T2>; _K <K3 K6 K10>; _B <&sl L_SYS>;    slow-release; };
-        combo_num           { _L <L_ALL>; _T <T2>; _K <K2 K6>;     _B <&sl L_NUM>;    slow-release; };
-        combo_num_shifted   { _L <L_ALL>; _T <T3>; _K <K2 K6 K10>; _B <&num_shifted>; slow-release; };
+        combo_fun           { _L <L_ALL>; _T <T2>; _K <K3 K6>;          _B <&sl L_FUN>;    slow-release; };
+        combo_sys           { _L <L_ALL>; _T <T2>; _K <K3 K6 K10>;      _B <&sl L_SYS>;    slow-release; };
+        combo_num           { _L <L_ALL>; _T <T2>; _K <K2 K6>;          _B <&sl L_NUM>;    slow-release; };
+        combo_num_shifted   { _L <L_ALL>; _T <T3>; _K <K2 K6 K10>;      _B <&num_shifted>; slow-release; };
 
         // controls
-        combo_enter         { _L <L_ALL>; _T <T2>; _K <K4 K9>;    _B <&kp ENTER>; };
-        combo_backspace     { _L <L_ALL>; _T <T2>; _K <K3 K9>;    _B <&kp BACKSPACE>; };
-        combo_ctrl_bspc     { _L <L_ALL>; _T <T2>; _K <K2 K3 K9>; _B <&kp LC(BACKSPACE)>; };
-        combo_delete        { _L <L_ALL>; _T <T2>; _K <K3 K7>;    _B <&kp DELETE>; };
-        combo_esc           { _L <L_ALL>; _T <T2>; _K <K2 K7>;    _B <&kp ESC>; };
-        combo_tab           { _L <L_ALL>; _T <T4>; _K <K2 K3 K4>; _B <&kp TAB>; };
-        combo_space         { _L <L_ALL>; _T <T4>; _K <K7 K8 K9>; _B <&kp SPACE>; };
+        combo_enter         { _L <L_ALL>; _T <T2>; _K <K4 K9>;          _B <&kp ENTER>; };
+        combo_backspace     { _L <L_ALL>; _T <T2>; _K <K3 K9>;          _B <&kp BACKSPACE>; };
+        combo_ctrl_bspc     { _L <L_ALL>; _T <T2>; _K <K2 K3 K9>;       _B <&kp LC(BACKSPACE)>; };
+        combo_delete        { _L <L_ALL>; _T <T2>; _K <K3 K7>;          _B <&kp DELETE>; };
+        combo_esc           { _L <L_ALL>; _T <T2>; _K <K2 K7>;          _B <&kp ESC>; };
+        combo_tab           { _L <L_ALL>; _T <T4>; _K <K2 K3 K4>;       _B <&kp TAB>; };
+        combo_space         { _L <L_ALL>; _T <T4>; _K <K7 K8 K9>;       _B <&kp SPACE>; };
 
-        combo_lock          { _L <L_ALL>; _T <T3>; _K <K2 K4 K8>; _B <&to_eng_lock>; };
-        combo_eject         { _L <L_ALL>; _T <T4>; _K <K4 K6 K7 K8>;   _B <&kp C_EJECT>; };
+        combo_lock          { _L <L_ALL>; _T <T3>; _K <K2 K4 K8>;       _B <&to_eng_lock>; };
+        combo_eject         { _L <L_ALL>; _T <T4>; _K <K4 K6 K7 K8>;    _B <&kp C_EJECT>; };
 
-        combo_sl_ble        { _L <L_ALL>; _T <T4>; _K <K4 K6 K9 K1>;   _B <&sl L_BLE>; };
-        combo_bt_clr        { _L <L_BLE>; _T <T4>; _K <K2 K3 K7 K8>;         _B <&bt BT_CLR>; };
+        combo_sl_ble        { _L <L_ALL>; _T <T4>; _K <K4 K6 K9 K1>;    _B <&sl L_BLE>; };
+        combo_bt_clr        { _L <L_BLE>; _T <T4>; _K <K2 K3 K7 K8>;    _B <&bt BT_CLR>; };
 
-        combo_lat           { _L <L_ALL>; _T <T3>; _K <K7 K8 K9 K1>;   _B <&to_eng>; };
-        combo_rus           { _L <L_ALL>; _T <T3>; _K <K2 K3 K4 K1>;   _B <&to_rus>; };
+        combo_lat           { _L <L_ALL>; _T <T3>; _K <K7 K8 K9 K1>;    _B <&to_eng>; };
+        combo_rus           { _L <L_ALL>; _T <T3>; _K <K2 K3 K4 K1>;    _B <&to_rus>; };
 
-        combo_copy_cut      { _L <L_ALL>; _T <T2>; _K <K2 K1>;    _B <&td_copy_cut>; };
-        combo_paste         { _L <L_ALL>; _T <T2>; _K <K3 K1>;    _B <&kp LG(V)>; };
-        combo_undo          { _L <L_ALL>; _T <T2>; _K <K4 K1>;    _B <&kp LG(Z)>; };
+        combo_copy_cut      { _L <L_ALL>; _T <T2>; _K <K2 K1>;          _B <&td_copy_cut>; };
+        combo_paste         { _L <L_ALL>; _T <T2>; _K <K3 K1>;          _B <&kp LG(V)>; };
+        combo_undo          { _L <L_ALL>; _T <T2>; _K <K4 K1>;          _B <&kp LG(Z)>; };
     };
 
     macros {
