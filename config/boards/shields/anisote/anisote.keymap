@@ -102,6 +102,8 @@
 #define TSL 1000
 #define TSK 5000
 
+#define %L layers =
+
 // tune-up default behaviors
 &sk { release-after-ms = <TSK>; quick-release; };
 &sl { release-after-ms = <TSL>; };
