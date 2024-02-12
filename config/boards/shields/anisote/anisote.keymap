@@ -258,9 +258,9 @@
         combo_shift_lock    { _L <L_ALL>; _T <T2>; _K <K3 K8>;          _B <&kt LSHFT>; };                     rcombo_shift_lock    { _L <R_ALL>; _T <T2>; _K <RK3 RK8>;          _B <&kt LSHFT>; };
 
         // one shot layers
-        combo_fun           { _L <L_ALL>; _T <T2>; _K <K3 K6>;          _B <&sl L_FUN>;    slow-release; };    rcombo_fun           { _L <R_ALL>; _T <T2>; _K <RK3 RK6>;          _B <&sl L_FUN>;    slow-release; };
-        combo_sys           { _L <L_ALL>; _T <T2>; _K <K3 K6 K10>;      _B <&sl L_SYS>;    slow-release; };    rcombo_sys           { _L <R_ALL>; _T <T2>; _K <RK3 RK6 RK10>;      _B <&sl L_SYS>;    slow-release; };
-        combo_num           { _L <L_ALL>; _T <T2>; _K <K2 K6>;          _B <&sl L_NUM>;    slow-release; };    rcombo_num           { _L <R_ALL>; _T <T2>; _K <RK2 RK6>;          _B <&sl L_NUM>;    slow-release; };
+        combo_fun           { _L <L_ALL>; _T <T2>; _K <K3 K6>;          _B <&sl L_FUN>;    slow-release; };    rcombo_fun           { _L <R_ALL>; _T <T2>; _K <RK3 RK6>;          _B <&sl R_FUN>;    slow-release; };
+        combo_sys           { _L <L_ALL>; _T <T2>; _K <K3 K6 K10>;      _B <&sl L_SYS>;    slow-release; };    rcombo_sys           { _L <R_ALL>; _T <T2>; _K <RK3 RK6 RK10>;      _B <&sl R_SYS>;    slow-release; };
+        combo_num           { _L <L_ALL>; _T <T2>; _K <K2 K6>;          _B <&sl L_NUM>;    slow-release; };    rcombo_num           { _L <R_ALL>; _T <T2>; _K <RK2 RK6>;          _B <&sl R_NUM>;    slow-release; };
         combo_num_shifted   { _L <L_ALL>; _T <T3>; _K <K2 K6 K10>;      _B <&num_shifted>; slow-release; };    rcombo_num_shifted   { _L <R_ALL>; _T <T3>; _K <RK2 RK6 RK10>;      _B <&num_shifted_r>; slow-release; };
 
         // controls
@@ -275,7 +275,7 @@
         combo_lock          { _L <L_ALL>; _T <T3>; _K <K2 K4 K8>;       _B <&to_eng_lock>; };      rcombo_lock          { _L <R_ALL>; _T <T3>; _K <RK2 RK4 RK8>;       _B <&to_eng_lock_r>; };
         combo_eject         { _L <L_ALL>; _T <T4>; _K <K4 K6 K7 K8>;    _B <&kp C_EJECT>; };       rcombo_eject         { _L <R_ALL>; _T <T4>; _K <RK4 RK6 RK7 RK8>;    _B <&kp C_EJECT>; };
 
-        combo_sl_ble        { _L <L_ALL>; _T <T4>; _K <K1 K4 K6 K9>;    _B <&sl L_BLE>; };         rcombo_sl_ble        { _L <R_ALL>; _T <T4>; _K <RK1 RK4 RK6 RK9>;    _B <&sl L_BLE>; };
+        combo_sl_ble        { _L <L_ALL>; _T <T4>; _K <K1 K4 K6 K9>;    _B <&sl L_BLE>; };         rcombo_sl_ble        { _L <R_ALL>; _T <T4>; _K <RK1 RK4 RK6 RK9>;    _B <&sl R_BLE>; };
         combo_bt_clr        { _L <L_BLE>; _T <T4>; _K <K2 K3 K7 K8>;    _B <&bt BT_CLR>; };        rcombo_bt_clr        { _L <R_BLE>; _T <T4>; _K <RK2 RK3 RK7 RK8>;    _B <&bt BT_CLR>; };
 
         combo_lat           {             _T <T3>; _K <K1 K7 K8 K9>;    _B <&to_eng>; };           rcombo_lat           {             _T <T3>; _K <RK1 RK7 RK8 RK9>;    _B <&to_eng_r>; };
