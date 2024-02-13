@@ -294,7 +294,7 @@
         to_eng_lock: to_eng_lock {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            _B <&to L_LAT &kp LC(LS(N1)) &kp LG(L)>;};
+            _B <&to L_LAT &kp LC(LS(N1)) &kp LC(LG(Q))>;};
         to_rus: to_rus {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -316,7 +316,7 @@
         to_eng_lock_r: to_eng_lock_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            _B <&to R_LAT &kp LC(LS(N1)) &kp LG(L)>;};
+            _B <&to R_LAT &kp LC(LS(N1)) &kp LC(LG(Q))>;};
         to_rus_r: to_rus_r {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
