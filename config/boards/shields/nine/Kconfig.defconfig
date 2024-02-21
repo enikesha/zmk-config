@@ -16,9 +16,14 @@ if SHIELD_NINE_RIGHT
 config ZMK_KEYBOARD_NAME
     default "Nine Right"
 
+config ZMK_USB
+    default n
+
 endif
 
 if SHIELD_NINE_LEFT || SHIELD_NINE_RIGHT
+
 config ZMK_SPLIT
     default y
+
 endif
