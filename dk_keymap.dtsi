@@ -153,14 +153,14 @@ combos {
         timeout-ms = < COMBO_TIMEOUT_2 >;
         layers = < AL1 AR1 >;
     };
-    ctrl_backspace {
-        bindings = <&kp LC(BACKSPACE)>;
-        key-positions = < KEY_N KEY_E KEY_C >;
+    alt_backspace {
+        bindings = <&kp LA(BACKSPACE)>;
+        key-positions = < KEY_N KEY_U KEY_O >;
         timeout-ms = < COMBO_TIMEOUT_3 >;
         layers = < AL1 AR1 >;
     };
-    ctrl_backspace_left {
-        bindings = <&kp LC(BACKSPACE)>;
+    alt_backspace_left {
+        bindings = <&kp LA(BACKSPACE)>;
         key-positions = < KEY_L KEY_G KEY_T >;
         timeout-ms = < COMBO_TIMEOUT_3 >;
         layers = < AL1 AR1 >;
@@ -229,7 +229,7 @@ macros {
     to_eng_lock: to_eng_lock {
         compatible = "zmk,behavior-macro";
         #binding-cells = <0>;
-        bindings = <&to AL1 &kp LC(LS(N1)) &kp F13>;
+        bindings = <&to AL1 &kp LC(LS(N1)) &kp LC(LG(Q))>;
     };
     to_rus: to_rus {
         compatible = "zmk,behavior-macro";
