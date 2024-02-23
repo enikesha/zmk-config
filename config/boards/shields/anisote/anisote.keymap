@@ -347,13 +347,13 @@
         compatible = "zmk,keymap";
         L_LAT {
             _B <
-                _____               &kp LAT_1           &kp LAT_2           &lt L_ADD LAT_3           _____
+                &sk LCTRL           &kp LAT_1           &kp LAT_2           &lt L_ADD LAT_3           _____
                 &lt L_NAV LAT_4     &kp LAT_5           &kp LAT_6           &lt L_SYM LAT_7           THUMB       
             >;
         };
         L_RUS {
             _B <
-                _____               &kp RUS_1           &kp RUS_2           &lt L_ADD RUS_3           _____
+                &sk LCTRL           &kp RUS_1           &kp RUS_2           &lt L_ADD RUS_3           _____
                 &lt L_NAV RUS_4     &kp RUS_5           &kp RUS_6           &lt L_SYM RUS_7           THUMB 
             >;
         };
